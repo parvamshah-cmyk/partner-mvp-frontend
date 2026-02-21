@@ -8,7 +8,7 @@ function ShareCard({ score, onClose }) {
 
   const siteUrl = window.location.origin;
   const bondLabel = score >= 80 ? "an incredible" : score >= 70 ? "a really strong" : "a great";
-  const shareText = `My Destiny Quotient is ${score}%! The stars say we have ${bondLabel} cosmic bond. Check yours: ${siteUrl}`;
+  const shareText = `My Destiny Quotient is ${score}%! It means there is a ${score}%probability my destined partner will match my dreams (according to Indian Astrology).\n Check yours now: ${siteUrl}`;
 
   // Generate share image on canvas (only when sharing)
   const generateImage = useCallback(() => {
