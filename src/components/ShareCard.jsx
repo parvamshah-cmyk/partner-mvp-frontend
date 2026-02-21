@@ -1,12 +1,10 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useState } from "react";
 import envelopeImg from "../assets/Envelope4.jpg";
 import stampImg from "../assets/waxstamp1.png";
 import "./ShareCard.css";
 
 function ShareCard({ score, onClose }) {
   const [sharing, setSharing] = useState(false);
-  const envelopeRef = useRef(null);
-  const stampRef = useRef(null);
 
   const siteUrl = window.location.origin;
   const bondLabel = score >= 80 ? "an incredible" : score >= 70 ? "a really strong" : "a great";
