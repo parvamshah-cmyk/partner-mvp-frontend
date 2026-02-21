@@ -1,0 +1,17 @@
+.step-blocks {
+  display: flex;
+  gap: 6px;
+  padding: 2px 24px 8px;
+}
+
+.step-block {
+  flex: 1;
+  height: 4px;
+  border-radius: 3px;
+  background: #f0e0e3;
+  transition: background 0.6s ease;
+}
+
+.step-block.filled {
+  background: #f5c542;
+}
